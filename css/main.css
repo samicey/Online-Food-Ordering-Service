@@ -12,6 +12,11 @@ body{
 .homeImage img{
     height:500px;
 }
+/* Featured Products*/
+
+.featuredProducts{
+    margin: 20px auto;
+}
 
     footer{
         background-color: darkslategrey;
