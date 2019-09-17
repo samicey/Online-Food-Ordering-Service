@@ -5,10 +5,27 @@ form{
     border-radius:10px;
     font-weight: 700;
 }
+div.signUp{
+    display:none;
+}
 
 .selectOne{
     margin:80px auto;
     align-content: center;
 }
 
+h6.aUser{
+    margin-left: 100px;
+    display:inline;
+}
+footer{
+    margin-top:500px;
+}
 
+/* media queries*/
+@media(max-width:500px){
+    h6.aUser{
+        margin-left: 10px;
+        display:inline;
+    }
+}
