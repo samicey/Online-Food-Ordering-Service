@@ -1,6 +1,4 @@
 $(document).ready(function (){
- 
- 
  $('#signUpSubmit').click(function (e){
     e.preventDefault()
     const firstName = $('#firstName').val();
@@ -35,6 +33,28 @@ $(document).ready(function (){
             }
      })
  
+})
+$('#signUpSubmit').click(function (e){
+    e.preventDefault();
+    const Inemail = $('#Inemail').val();
+    const Inpassword = $('#Inpassword').val();
+    $.ajax({
+        method:'GET',
+        url:`http://localhost:3000/users?email=${Inemail}&password=${Inpassword}`,
+        data:{
+           email: Inemail,
+           password: Inpassword,
+        },
+        success:function(res){
+            if(res.length){
+                window.localStorage.assign('index.html')
+            }else{
+                alert("Email or Password Doesn't Exist")
+            }
+
+        }
+    })
+
 })
 })
 
