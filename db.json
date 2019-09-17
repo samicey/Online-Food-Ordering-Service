@@ -11,7 +11,14 @@
     
   ],
   "admin":[
-      
+    {
+        "firstName": "SLEEKY",
+        "lastName": "TECHIES",
+        "password": "12345",
+        "email": "wildhikings@gmail.com",
+        "phoneNumber": "07062270726",
+        "id": 1
+      }
   ],
   "products": [],
   "orders": []
