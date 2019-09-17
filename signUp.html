@@ -45,21 +45,21 @@
         <main>
             <div class="selectOne ">
                 <span><button class="btn btn-lg btn-info justify-content-end">Sign In</button></span>
-                <span><button class="btn btn-lg btn-primary justify-content-end">New? Register Here</button></span>
+                <span><button class="btn btn-lg btn-primary justify-content-end regButton">New? Register Here</button></span>
             </div>
-            <div class="signUp ">
+            <div class="signUp">
                     <form>
                         <fieldset>
                             <div class="form-group">
                                     <div class="form-group">
                                         <h2>Register With Us</h2>
-                                            <label for="firstName">First Name</label>
-                                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                                          </div>
-                                          <div class="form-group">
-                                                <label for="lastName">Password</label>
-                                                <input type="password" class="form-control" id="lastName" placeholder="Last Name">
-                                              </div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                </div>
                               <label for="email">Email address</label>
                               <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                               <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone.</small>
@@ -73,14 +73,14 @@
                                     <input type="password" class="form-control" id="Repassword" placeholder="Repeat Password">
                                   </div>
                                   <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
+                                        <label for="exampleInputPassword1">Phone Number</label>
                                         <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
                                       </div>
                             <div class="form-group form-check">
                               <input type="checkbox" class="form-check-input" id="terms">
                               <label class="form-check-label" for="terms">Agree to Terms of Service</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</butto>
+                            <button type="submit" class="btn btn-primary" id="signUpSubmit">Submit</butto>
                 </fieldset>
             </form>
             </div>
@@ -89,5 +89,6 @@
         
         <script src="./libraries/jquery/jquery.min.js"></script>
         <script src="./libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/signUp.js"></script>
     </body>
 </html>

@@ -1,8 +1,9 @@
 form{
     margin:10px auto;
     width:60%;
-    background-color: rgba(0,255,255,0.7);
+    display:hidden;
     border-radius:10px;
+    font-weight: 700;
 }
 
 .selectOne{

@@ -1,0 +1,22 @@
+{
+  "name": "online_food_ordering_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samicey/Online-Food-Ordering-Service.git"
+  },
+  "author": "samuelchibuike22@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samicey/Online-Food-Ordering-Service/issues"
+  },
+  "homepage": "https://github.com/samicey/Online-Food-Ordering-Service#readme",
+  "dependencies": {
+    "json-server": "0.15.0"
+  }
+}
