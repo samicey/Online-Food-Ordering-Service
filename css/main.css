@@ -1,8 +1,17 @@
 body{
     background-color: beige;
     }
+/*
+    Home Page Carousel Styles
 
-
+*/
+ .homeImage{
+    margin-top:70px;
+    height: 60%;
+}
+.homeImage img{
+    height:500px;
+}
 
     footer{
         background-color: darkslategrey;
