@@ -1,0 +1,23 @@
+.AdminRow{
+    margin: 0px auto 20px 0px;
+    width: 30%;
+    position: absolute;
+    top:73px;
+    background-color: bisque;
+}
+.AdminRow p{
+    background-color: aqua;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+
+}
+.AdminRow ul{
+    padding:15px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+footer{
+    margin-top: 500px;
+}
