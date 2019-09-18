@@ -1,26 +1,37 @@
 
 .AdminRow{
     margin: 0px auto 20px 0px;
-    width: 30%;
+    width: 22%;
     position: absolute;
     top:73px;
-    background-color: bisque;
+    background-color: black;
+    color: white;
 }
 .AdminRow p{
-    background-color: aqua;
+    background-color:black;
     font-size: 1.2em;
     font-weight: 700;
     text-align: center;
 
 }
-.AdminRow ul{
+.AdminRow ul, .AdminRow ul a{
     padding:15px;
     font-size: 1.1em;
     line-height: 1.2em;
     font-weight: 600;
+    color:gray;
 }
- #ProductOrder{
-    margin-left:400px;
+.AdminRow ul a:hover{
+    color: white;
+}
+ #sideDisplay{
+     margin-top:80px;
+    margin-left:300px;
+    height:100vh;
+    
+}
+section h3, section p{
+    text-align:center;
 }
 form{
     width:60%;
@@ -29,5 +40,5 @@ form{
     font-weight: 700;
 }
 footer{
-    margin-top: 50px;
+    margin-top: 5px;
 }

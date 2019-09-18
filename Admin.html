@@ -47,8 +47,12 @@
         </header>
         <main>
             <section class="AdminRow">
-                <p>Admin Column</p>
+                <p>Admin Panel</p>
                 <ul class="navbar-nav ">
+                        <li class="nav-item">
+                                <a href="" class="nav-link" id="AdminHome">Home</a>
+        
+                            </li>
                     <li class="nav-item">
                         <a href="" class="nav-link" id="AddProduct">&plus; Add New Products</a>
 
@@ -64,6 +68,7 @@
                     
                 </ul>
             </section>
+            <div id="sideDisplay">
             <section id="ProductOrder">
                     <div class="signUp">
                             <form>
@@ -106,10 +111,27 @@
                     </div>
         
             </section>
+            <section id="welcomeMessage">
+                <h3>Welcome To Delicious Foods</h3>
+                <p>This is the Admin Page for Delicious Foods Restuarant.<br /> You can Add, Delete and Update foods from this page.
+
+                </p>
+
+            </section>
+            <section id="viewAllProductsPage">
+                <h3>All Products</h3>
+                <p>This is the View all products secion</p>
+            </section>
+            <section class="viewOrders">
+                    <h3>View Orders</h3>
+                    <p>This is the View all Orders</p>
+                </section>
+            </div>
 
         </main>
        <footer><p>&copy; 2019</p></footer>
         <script src="./libraries/jquery/jquery.min.js"></script>
         <script src="./libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/Admin.js"></script>
     </body>
 </html>
