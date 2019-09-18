@@ -25,9 +25,18 @@
       "category": "Foods",
       "Image": "ryuiioo",
       "quantity": "44",
-      "Description": "                                            uriturhguirgui",
+      "Description": "uriturhguirgui",
       "price": "23",
       "id": 1
+    },
+    {
+      "ProductName": "Beans",
+      "category": "Foods",
+      "Image": "http://users/me.com",
+      "quantity": "21",
+      "Description": "This is a nice beans",
+      "price": "20000",
+      "id": 2
     }
   ],
   "orders": []

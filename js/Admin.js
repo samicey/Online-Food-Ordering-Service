@@ -69,6 +69,27 @@ $('#AddGoods').click(function (e){
 })
 
 
+$.ajax({
+    url: "http://localhost:3000/products",
+    type: "GET",
+    dataType: 'jsonp',
+    success: function (data, status) {
+        let productData ='';
+        data.forEach(product=>
+         $("#appendHere").html(
+          productData += `<tr>
+            <th scope="row">${product.id}</th>
+           <td>${product.ProductName}</td>
+          <td>${product.category}</td>
+            <td>${product.price}</td>
+            <td>${product.quantity}</td>
+            <td>${product.Description}</td>
+            <td><button class="btn btn-sm btn-danger">Delete</button></td>
+            </tr>`
+         ))
+    },
+    
+});
 
 $('#logout').click(function (){
     localStorage.clear();
