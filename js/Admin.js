@@ -68,6 +68,17 @@ $('#AddGoods').click(function (e){
      })
 })
 
+    $('#deletebtn').on('click', function (){
+    $.ajax({
+        method:'GET',
+        url: `http://localhost:3000/products?id${id}`,
+        success:function (item){
+            let id = $(this).id
+            delete item[0];
+        }
+        
+    })
+    })
 
 $.ajax({
     url: "http://localhost:3000/products",
@@ -81,16 +92,16 @@ $.ajax({
             <th scope="row">${product.id}</th>
            <td>${product.ProductName}</td>
           <td>${product.category}</td>
-            <td>${product.price}</td>
+            <td><span>&#8358;</span>${product.price}</td>
             <td>${product.quantity}</td>
             <td>${product.Description}</td>
-            <td><button class="btn btn-sm btn-danger">Delete</button></td>
+            <td><button class="btn btn-sm btn-danger" id="deletebtn" >Delete</button></td>
             </tr>`
          ))
     },
     
 });
-
+ 
 $('#logout').click(function (){
     localStorage.clear();
     window.location.assign('adminSignIn.html');

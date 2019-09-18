@@ -23,20 +23,29 @@
     {
       "ProductName": "Rice",
       "category": "Foods",
-      "Image": "ryuiioo",
-      "quantity": "44",
-      "Description": "uriturhguirgui",
-      "price": "23",
+      "Image": "http://users/me.com",
+      "quantity": "12",
+      "Description": "THIS is here to get the description ",
+      "price": "23454",
       "id": 1
     },
     {
-      "ProductName": "Beans",
+        "ProductName": "Rice",
+        "category": "Foods",
+        "Image": "http://users/me.com",
+        "quantity": "12",
+        "Description": "THIS is here to get the description ",
+        "price": "23454",
+        "id": 2
+      },
+      {
+      "ProductName": "Rice",
       "category": "Foods",
       "Image": "http://users/me.com",
-      "quantity": "21",
-      "Description": "This is a nice beans",
-      "price": "20000",
-      "id": 2
+      "quantity": "12",
+      "Description": "THIS is here to get the description ",
+      "price": "23454",
+      "id": 3
     }
   ],
   "orders": []
