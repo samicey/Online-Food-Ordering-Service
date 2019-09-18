@@ -35,6 +35,39 @@ $('#AddGoods').click(function (e){
     const ProductName = $('#productName').val();
     const category = $('#category').val();
     const Image = $('#uploadImage').val();
-    const Description= $('#productDescription').val(); 
+    const price = $('#price').val();
+    const quantity = $('#quantity').val();
+    const Description = $('#productDescription').val(); 
+    $.ajax({
+        method: 'GET',
+        url:`http://localhost:3000/products?${Image}`,
+        data:{
+            Image
+        },
+    success:function(res){
+             if(res.length){
+                 alert('Product Alreay Exist;')
+             }else{
+                $.ajax({
+                    method:'POST',
+                    url:'http://localhost:3000/products',
+                    data:{
+                        ProductName,
+                        category,
+                        Image,
+                        quantity,
+                        Description,
+                        price
+                    }
+                    })
+         
+                }
+            }
+     })
 })
+
+$('#logout').click(function (){
+    localStorage.clear();
+    window.location.assign('adminSignIn.html');
+}) 
 })
