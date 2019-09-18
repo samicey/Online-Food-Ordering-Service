@@ -32,6 +32,9 @@ $('#viewOrders').click(function(e){
 })
 $('#AddGoods').click(function (e){
     e.preventDefault();
-    const 
+    const ProductName = $('#productName').val();
+    const category = $('#category').val();
+    const Image = $('#uploadImage').val();
+    const Description= $('#productDescription').val(); 
 })
 })
