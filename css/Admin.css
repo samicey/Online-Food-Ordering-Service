@@ -39,6 +39,10 @@ form{
     display:block;
     font-weight: 700;
 }
+#success{
+    font-size:14px;
+    color:green;
+}
 footer{
     margin-top: 100px;
 }

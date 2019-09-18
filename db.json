@@ -20,9 +20,15 @@
     }
   ],
   "products": [
-    
+    {
+      "ProductName": "Rice",
+      "category": "Foods",
+      "Image": "ryuiioo",
+      "quantity": "44",
+      "Description": "                                            uriturhguirgui",
+      "price": "23",
+      "id": 1
+    }
   ],
-  "orders": [
-      
-  ]
+  "orders": []
 }

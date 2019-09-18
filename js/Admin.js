@@ -2,6 +2,7 @@ $(document).ready(function (){
    $('#ProductOrder').hide();
    $('#viewAllProductsPage').hide();
    $('.viewOrders').hide();
+   $('#success').hide();
    $('#AdminHome').click(function(e){
        e.preventDefault();
        $('#welcomeMessage').fadeIn();
@@ -62,9 +63,12 @@ $('#AddGoods').click(function (e){
                     })
          
                 }
+                $('#success').fideIn();
             }
      })
 })
+
+
 
 $('#logout').click(function (){
     localStorage.clear();
