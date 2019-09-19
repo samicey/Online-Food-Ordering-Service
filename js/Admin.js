@@ -63,44 +63,51 @@ $('#AddGoods').click(function (e){
                     })
          
                 }
-                $('#success').fideIn();
+                
             }
      })
 })
 
-    $('#deletebtn').on('click', function (){
-    $.ajax({
-        method:'GET',
-        url: `http://localhost:3000/products?id${id}`,
-        success:function (item){
-            let id = $(this).id
-            delete item[0];
-        }
-        
-    })
-    })
+ 
 
-$.ajax({
-    url: "http://localhost:3000/products",
-    type: "GET",
-    dataType: 'jsonp',
-    success: function (data, status) {
-        let productData ='';
-        data.forEach(product=>
-         $("#appendHere").html(
-          productData += `<tr>
+$.get("http://localhost:3000/products", function (data, status) {
+        
+        data.forEach(product=>{
+         $("#appendHere").append(
+          `<tr id="${product.id}">
             <th scope="row">${product.id}</th>
            <td>${product.ProductName}</td>
           <td>${product.category}</td>
             <td><span>&#8358;</span>${product.price}</td>
             <td>${product.quantity}</td>
             <td>${product.Description}</td>
-            <td><button class="btn btn-sm btn-danger" id="deletebtn" >Delete</button></td>
+            <td><button class="btn btn-sm btn-primary editbtn">Edit</button></td>
+            <td><button class="btn btn-sm btn-danger deletebtn" data-deleteid="${product.id}">Delete</button></td>
             </tr>`
-         ))
-    },
-    
-});
+         
+         ) 
+        })
+        const del = $('.deletebtn');
+        const editProduct = $('.editbtn');
+        del.on('click', function(evn){
+            
+           const deleteID = evn.currentTarget.dataset.deleteid;
+           
+           $.ajax({
+               method: 'DELETE',
+               url:`http://localhost:3000/products/${deleteID}`,
+               success: function (){
+                    $(`#${deleteID}`).remove()
+               }
+           })
+           
+        })
+        editProduct.on('click', function(event){
+            
+        })
+     });
+
+
  
 $('#logout').click(function (){
     localStorage.clear();

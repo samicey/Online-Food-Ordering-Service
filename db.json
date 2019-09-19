@@ -19,34 +19,6 @@
       "id": 1
     }
   ],
-  "products": [
-    {
-      "ProductName": "Rice",
-      "category": "Foods",
-      "Image": "http://users/me.com",
-      "quantity": "12",
-      "Description": "THIS is here to get the description ",
-      "price": "23454",
-      "id": 1
-    },
-    {
-        "ProductName": "Rice",
-        "category": "Foods",
-        "Image": "http://users/me.com",
-        "quantity": "12",
-        "Description": "THIS is here to get the description ",
-        "price": "23454",
-        "id": 2
-      },
-      {
-      "ProductName": "Rice",
-      "category": "Foods",
-      "Image": "http://users/me.com",
-      "quantity": "12",
-      "Description": "THIS is here to get the description ",
-      "price": "23454",
-      "id": 3
-    }
-  ],
+  "products": [],
   "orders": []
 }
