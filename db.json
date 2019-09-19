@@ -39,5 +39,13 @@
       "id": 2
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "ProductName": "Beans",
+      "category": "foods",
+      "Description": "3242r32                                       ",
+      "price": "2",
+      "id": 1
+    }
+  ]
 }
