@@ -100,6 +100,7 @@ $.get("http://localhost:3000/products", function (data, status) {
                url:`http://localhost:3000/products/${deleteID}`,
                success: function (){
                     $(`#${deleteID}`).remove()
+    
                }
            })
            
@@ -131,6 +132,9 @@ $.get("http://localhost:3000/products", function (data, status) {
                 price,
                 quantity,
                 Description
+                },
+                success:function(){
+                    $('#EditOrder').fadeOut();
                 }
             })
         })

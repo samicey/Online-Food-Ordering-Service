@@ -18,6 +18,10 @@ body{
     margin: 20px auto;
 }
 
+#Allproduct{
+    margin-top:100px;
+    margin-left: 20px;
+}
     footer{
         background-color: darkslategrey;
         height: 250px;

@@ -19,6 +19,25 @@
       "id": 1
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "ProductName": "Beans",
+      "category": "foods",
+      "Image": "img/productsImage/burger.jpg",
+      "quantity": "3234",
+      "Description": "         3242r32                                       ",
+      "price": "2",
+      "id": 1
+    },
+    {
+      "ProductName": "Beans",
+      "category": "foods",
+      "Image": "./img/productsImage/chineseSoup.jpg",
+      "quantity": "3234",
+      "Description": "         3242r32                                       ",
+      "price": "2",
+      "id": 2
+    }
+  ],
   "orders": []
 }
