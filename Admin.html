@@ -141,10 +141,62 @@
             </section>
             <section class="viewOrders">
                     <h3>View Orders</h3>
-                    <p>This is the View all Orders</p>
+                <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Product Description</t>
+                            <th scope="col"></th>
+                           </tr>
+                        </thead>
+                        <tbody id="orderHere">
+                          
+                        </tbody>
+                      </table>
+                </section>
+                <section id="EditOrder">
+                        <div class="signUp">
+                                <form>
+                                    <fieldset>
+                                        <div class="form-group">
+                                                <div class="form-group">
+                                                    <h2 class="formText">Edit Product</h2>
+                                                    <br />
+                                        <label for="productName">Product Name</label>
+                                        <input type="text" class="form-control" id="changeproductName" placeholder="Enter Product Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="category">Category</label>
+                                            <input type="text" class="form-control" id="changecategory" placeholder="Enter Product Category">
+                                            </div>
+                                            <div class="form-group">
+                                          <label for="price">Price</label>
+                                          <input type="number" class="form-control" id="changeprice" aria-describedby="price" placeholder="Enter Price">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="quantity">Quantity</label>
+                                          <input type="number" class="form-control" id="changequantity" placeholder="Enter Product Quantity">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="productDescription">Product Description</label>
+                                                <textarea class="form-control" id="changeDescription" placeholder="Enter Product Description">
+                                                </textarea>
+                                              </div>
+                                        
+                                              
+                                              <button type="submit" class="btn btn-sm btn-danger" id="cancelProducts">Cancel</button>
+                                        <button type="submit" class="btn btn-sm btn-primary" id="saveProducts">Save</button>
+                            </fieldset>
+                        </form>
+                        </div>
+            
                 </section>
             </div>
-
+            
         </main>
        <footer><p>&copy; 2019</p></footer>
         <script src="./libraries/jquery/jquery.min.js"></script>

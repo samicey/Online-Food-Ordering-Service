@@ -3,6 +3,7 @@ $(document).ready(function (){
    $('#viewAllProductsPage').hide();
    $('.viewOrders').hide();
    $('#success').hide();
+   $('#EditOrder').hide();
    $('#AdminHome').click(function(e){
        e.preventDefault();
        $('#welcomeMessage').fadeIn();
@@ -47,7 +48,8 @@ $('#AddGoods').click(function (e){
         },
     success:function(res){
              if(res.length){
-                 alert('Product Alreay Exist;')
+                 alert('Product Alreay Exist;');
+
              }else{
                 $.ajax({
                     method:'POST',
@@ -81,7 +83,7 @@ $.get("http://localhost:3000/products", function (data, status) {
             <td><span>&#8358;</span>${product.price}</td>
             <td>${product.quantity}</td>
             <td>${product.Description}</td>
-            <td><button class="btn btn-sm btn-primary editbtn">Edit</button></td>
+            <td><button class="btn btn-sm btn-primary editbtn" data-editid="${product.id}" >Edit</button></td>
             <td><button class="btn btn-sm btn-danger deletebtn" data-deleteid="${product.id}">Delete</button></td>
             </tr>`
          
@@ -103,10 +105,23 @@ $.get("http://localhost:3000/products", function (data, status) {
            
         })
         editProduct.on('click', function(event){
-            
+
+           const EditP = event.currentTarget.dataset.editid;
+           getForm()
+           
+        
         })
      });
 
+     function getForm(){
+$('#viewAllProductsPage').fadeOut()
+$('#EditOrder').fadeIn();
+     }
+     $('#cancelProducts').click(function(e){
+        $('#viewAllProductsPage').fadeIn()
+$('#EditOrder').fadeOut(); 
+e.preventDefault()
+     })
 
  
 $('#logout').click(function (){

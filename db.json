@@ -19,6 +19,16 @@
       "id": 1
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "ProductName": "Rice",
+      "category": "Foods",
+      "Image": "http://users/me.com",
+      "quantity": "555",
+      "Description": "dydgudity tchyctt gchycydt ",
+      "price": "44",
+      "id": 1
+    }
+  ],
   "orders": []
 }
