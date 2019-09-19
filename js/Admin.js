@@ -107,21 +107,39 @@ $.get("http://localhost:3000/products", function (data, status) {
         editProduct.on('click', function(event){
 
            const EditP = event.currentTarget.dataset.editid;
-           getForm()
+           $('#viewAllProductsPage').fadeOut()
+        $('#EditOrder').fadeIn();
+           $('#cancelProducts').click(function(e){
+            $('#viewAllProductsPage').fadeIn()
+    $('#EditOrder').fadeOut(); 
+    e.preventDefault()
+        });
+        $('#saveProducts').click(function(e){
+            e.preventDefault();
+            const ProductName = $('#changeproductName').val(),
+            category           = $('#changecategory').val(),
+            price              = $('#changeprice').val(),
+            quantity           = $('#changequantity').val(),
+            Description        = $('#changeDescription').val();
+            
+            $.ajax({
+                method: 'PATCH',
+                url:`http://localhost:3000/products/${EditP}`,
+                data:{
+                ProductName,
+                category,
+                price,
+                quantity,
+                Description
+                }
+            })
+        })
            
         
         })
      });
 
-     function getForm(){
-$('#viewAllProductsPage').fadeOut()
-$('#EditOrder').fadeIn();
-     }
-     $('#cancelProducts').click(function(e){
-        $('#viewAllProductsPage').fadeIn()
-$('#EditOrder').fadeOut(); 
-e.preventDefault()
-     })
+           
 
  
 $('#logout').click(function (){
