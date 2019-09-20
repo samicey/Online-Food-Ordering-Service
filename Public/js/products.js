@@ -1,4 +1,30 @@
  $(document).ready(function (){
+    
+    $('#inSearch').on('submit',function(){
+        const searchForm = $('#searchInput').val();
+        $('#Allproduct').fadeOut();
+        $('#searchHere').fadeIn();
+        $.ajax({
+            method:'GET',
+            url:`http://localhost:3000/products?ProductName=${searchHere}`,
+            success:function (product){
+               
+                $('#searchHere').append(
+                         `<span>
+                        
+                        <div><strong><a href="${product.Image}"><img src="${product.Image}" alt="food image"/></div></a>
+                        <h4>${product.ProductName}</h4>
+                        <span><span>&#8358;</span>${product.price}</span>
+                        <p>${product.Description}</p>
+                        <p>${product.quantity} avaliable</p></strong>
+                        <button class="btn btn-sm btn-primary viewbtn" data-viewid="${product.id}" >View</button><br />
+                    </span>`
+                )
+            }
+
+        })
+     })
+
     $.ajax({
         url: "http://localhost:3000/products",
         type: "GET",
