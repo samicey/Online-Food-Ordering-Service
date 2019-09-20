@@ -11,10 +11,10 @@
               
               <div><strong><a href="${product.Image}"><img src="${product.Image}" alt="food image"/></div></a>
               <h4>${product.ProductName}</h4>
-              <span><span>&#8358;</span>${product.price}</span><br />
+              <span><span>&#8358;</span>${product.price}</span>
               <p>${product.Description}</p>
               <p>${product.quantity} avaliable</p></strong>
-              <button class="btn btn-sm btn-primary viewbtn" data-viewid="${product.id}" >View</button>
+              <button class="btn btn-sm btn-primary viewbtn" data-viewid="${product.id}" >View</button><br />
           </span>`
              ))
              const  view = $('.viewbtn');

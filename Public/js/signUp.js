@@ -1,4 +1,13 @@
 $(document).ready(function (){
+    $('#signInHere').hide()
+    $('.signIn').click(function(){
+        $('#signUpHere').fadeOut();
+        $('#signInHere').fadeIn();
+    })
+    $('.regButton').click(function(){
+        $('#signUpHere').fadeIn();
+        $('#signInHere').fadeOut();
+    })
  $('#signUpSubmit').click(function (e){
     e.preventDefault()
     const firstName = $('#firstName').val();
@@ -7,6 +16,10 @@ $(document).ready(function (){
     const rePassword = $('#Repassword').val();
     const email = $('#email').val();
     const phoneNumber = $('#phoneNumber').val();
+    if(!firstName||!lastName||!password||!rePassword||!email||!phoneNumber){
+        alert('All Fields Are Required')
+        return;
+    }
     $.ajax({
         method: 'GET',
         url:`http://localhost:3000/users?${email}`,
@@ -34,7 +47,7 @@ $(document).ready(function (){
      })
  
 })
-$('#signUpSubmit').click(function (e){
+$('#signInHere').on('submit',function (e){
     e.preventDefault();
     const Inemail = $('#Inemail').val();
     const Inpassword = $('#Inpassword').val();
@@ -47,14 +60,16 @@ $('#signUpSubmit').click(function (e){
         },
         success:function(res){
             if(res.length){
-                window.localStorage.assign('index.html')
+
+                window.location.assign('products.html');
+                localStorage.setItem('email',Inemail)
             }else{
                 alert("Email or Password Doesn't Exist")
             }
 
         }
     })
-
+    e.preventDefault();
 })
 })
 

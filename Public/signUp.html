@@ -31,6 +31,7 @@
                 <ul class="navbar-nav ">
                     <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Track Your Orders</a></li>
                 </ul>
                 </div>
@@ -44,10 +45,10 @@
         </header>
         <main>
             <div class="selectOne ">
-                <span><button class="btn btn-lg btn-info justify-content-end">Sign In</button></span>
-                <span><button class="btn btn-lg btn-primary justify-content-end regButton">New? Register Here</button></span>
+                <span><button class="btn btn-lg btn-info signIn ">Sign In</button></span>
+                <span><button class="btn btn-lg btn-primary regButton">New? Register Here</button></span>
             </div>
-            <div class="signUp">
+            <div id="signUpHere">
                     <form>
                         <fieldset>
                             <div class="form-group">
@@ -85,9 +86,27 @@
                             <button type="submit" class="btn btn-primary" id="signUpSubmit">Register</button>
                 </fieldset>
             </form>
-            <h6 class="aUser">Already a User? <a href=""><button class="btn btn-sm btn-danger">Sign In</button></a></h6>
+            
             </div>
-           
+            <div >
+                   
+            <form id="signInHere">
+                    <div>
+                        <div class="form-group">
+                            <h2 class="signInText">Please Sign In</h3>
+                                <br />
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="Inemail" aria-describedby="SignInEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="Inpassword" placeholder="Password">
+                        </div>
+                        <span><button type="submit" class="btn btn-primary" id="UserLogIn">Sign In</button></span>
+                                                
+                    </div>
+                    </form>
+
         </main>
         <footer><p>&copy; 2019 </p>
             <a href="adminSignIn.html">Admin Page</a>

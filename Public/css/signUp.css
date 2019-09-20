@@ -5,12 +5,11 @@ form{
     border-radius:10px;
     font-weight: 700;
 }
-div.signUp{
-    display:none;
-}
+
 
 .selectOne{
-    margin:80px auto;
+    margin-top:80px;
+    margin-left:350px;
     align-content: center;
 }
 .welcomeText{
