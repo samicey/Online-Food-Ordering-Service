@@ -40,10 +40,15 @@
     }
   ],
   "orders": [
+    
     {
+      "UserName": "Obikaonu Samuel",
+      "Email": "samuelchibuike22@gmail.com",
       "ProductName": "Beans",
+      "Quantity": "2",
       "category": "foods",
-      "Description": "3242r32                                       ",
+      "Address": "67, Ayodele Street, Fadeyi, Lagos State, Nigeria.",
+      "PhoneNumber": "07062270726",
       "price": "2",
       "id": 1
     }

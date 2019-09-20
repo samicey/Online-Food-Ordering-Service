@@ -143,11 +143,29 @@ $.get("http://localhost:3000/products", function (data, status) {
         })
      });
 
-           
+     
 
  
 $('#logout').click(function (){
     localStorage.clear();
     window.location.assign('adminSignIn.html');
 }) 
+$.get("http://localhost:3000/orders", function (data, status) {
+        
+        data.forEach(product=>{
+         $("#orderHere").append(
+          `<tr id="${product.id}">
+            <th scope="row">${product.id}</th>
+           <td>${product.ProductName}</td>
+          <td>${product.UserName}</td>
+            <td><span>&#8358;</span>${product.price}</td>
+            <td>${product.Quantity}</td>
+            <td>${product.Address}</td>
+            <td>${product.PhoneNumber}</td>
+            <td>${product.Email}</td>
+            <td><button class="btn btn-sm btn-primary editbtn" data-editid="${product.id}" >Deliver</button></td>
+            </tr>`
+         
+         ) 
+        })})
 })
