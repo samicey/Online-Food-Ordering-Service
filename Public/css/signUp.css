@@ -1,0 +1,35 @@
+form{
+    margin:10px auto;
+    width:60%;
+    display:hidden;
+    border-radius:10px;
+    font-weight: 700;
+}
+
+
+.selectOne{
+    margin-top:80px;
+    margin-left:350px;
+    align-content: center;
+}
+.welcomeText{
+    margin:80px;
+    text-align: center;
+}
+
+h6.aUser{
+    margin-left: 100px;
+    display:inline;
+}
+footer{
+    margin-top:500px;
+}
+
+/* media queries*/
+@media(max-width:800px){
+    h6.aUser{
+        margin-left: 10px;
+        display:inline;
+    }
+}
+

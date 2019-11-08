@@ -17,7 +17,25 @@ body{
 .featuredProducts{
     margin: 20px auto;
 }
+#inSearch{
+    margin:100px auto 10px auto;
+    width:60%
+}
+#inSearch input{
+display:inline;
 
+}
+#inSearch button{
+    display:inline;
+    }
+#Allproduct{
+    margin-top:10px;
+    margin-left: 20px;
+}
+#OneOrder{
+    margin-top:200px;
+    margin-left: 20px;
+}
     footer{
         background-color: darkslategrey;
         height: 250px;

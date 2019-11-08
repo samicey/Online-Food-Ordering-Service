@@ -1,6 +1,71 @@
-
 {
-"users":[],
-"products":[],
-"orders":[]
+  "users": [
+    {
+      "firstName": "SLEEKY",
+      "lastName": "TECHIES",
+      "password": "12345",
+      "email": "wildhikings@gmail.com",
+      "phoneNumber": "07062270726",
+      "id": 1
+    },
+    {
+      "firstName": "SLEEKY",
+      "lastName": "TECHIES",
+      "password": "123456",
+      "email": "okeyboss23@gmail.com",
+      "phoneNumber": "7062270726",
+      "id": 2
+    },
+    {
+      "firstName": "Florence",
+      "lastName": "Acha",
+      "password": "123456",
+      "email": "samuelchibuike16@yahoo.com",
+      "phoneNumber": "08162395946",
+      "id": 3
+    }
+  ],
+  "admin": [
+    {
+      "firstName": "SLEEKY",
+      "lastName": "TECHIES",
+      "password": "12345",
+      "email": "wildhikings@gmail.com",
+      "phoneNumber": "07062270726",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "ProductName": "Beans",
+      "category": "foods",
+      "Image": "img/productsImage/burger.jpg",
+      "quantity": "3234",
+      "Description": "         3242r32                                       ",
+      "price": "2",
+      "id": 1
+    },
+    {
+      "ProductName": "Beans",
+      "category": "foods",
+      "Image": "./img/productsImage/chineseSoup.jpg",
+      "quantity": "3234",
+      "Description": "         3242r32                                       ",
+      "price": "2",
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "UserName": "Obikaonu Samuel",
+      "Email": "samuelchibuike22@gmail.com",
+      "ProductName": "Beans",
+      "Quantity": "2",
+      "category": "foods",
+      "Address": "67, Ayodele Street, Fadeyi, Lagos State, Nigeria.",
+      "PhoneNumber": "07062270726",
+      "price": "2",
+      "id": 1
+    }
+  ]
 }
