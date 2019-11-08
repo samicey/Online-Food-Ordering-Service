@@ -1,0 +1,45 @@
+body{
+    background-color: beige;
+    }
+/*
+    Home Page Carousel Styles
+
+*/
+ .homeImage{
+    margin-top:70px;
+    height: 60%;
+}
+.homeImage img{
+    height:500px;
+}
+/* Featured Products*/
+
+.featuredProducts{
+    margin: 20px auto;
+}
+#inSearch{
+    margin:100px auto 10px auto;
+    width:60%
+}
+#inSearch input{
+display:inline;
+
+}
+#inSearch button{
+    display:inline;
+    }
+#Allproduct{
+    margin-top:10px;
+    margin-left: 20px;
+}
+#OneOrder{
+    margin-top:200px;
+    margin-left: 20px;
+}
+    footer{
+        background-color: darkslategrey;
+        height: 250px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
